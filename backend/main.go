@@ -170,6 +170,7 @@ func notFound(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	println("Server is running!")
 	mux := http.NewServeMux()
 	fortuneH := &fortuneHandler{
 		store: &datastoreDefault,
